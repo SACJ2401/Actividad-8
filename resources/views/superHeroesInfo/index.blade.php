@@ -1,4 +1,6 @@
-Mostrar la lista de super Heroes
+@extends('layouts.app')
+@section('content')
+<div class="container">
 
 @if(Session::has('mensaje'))
 {{ Session::get('mensaje') }}
@@ -47,3 +49,5 @@ Mostrar la lista de super Heroes
         @endforeach
     </tbody>
 </table>
+</div>
+@endsection
